@@ -1,0 +1,192 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FF16E451-2316-42F8-94DF-071F3C9A409D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ThesisMain</RootNamespace>
+    <AssemblyName>ThesisMain</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
+      <HintPath>packages\Guna.UI2.WinForms.2.0.4.6\lib\net472\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=8.3.0.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Program Files (x86)\MySQL\MySQL Connector NET 8.3.0\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AbntClass.cs" />
+    <Compile Include="DBconnect.cs" />
+    <Compile Include="DocActForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DocActForm.Designer.cs">
+      <DependentUpon>DocActForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DocContractForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DocContractForm.Designer.cs">
+      <DependentUpon>DocContractForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DocRequestForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DocRequestForm.Designer.cs">
+      <DependentUpon>DocRequestForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="documentsact.cs" />
+    <Compile Include="DocumentsContract.cs" />
+    <Compile Include="DocumentsRequest.cs" />
+    <Compile Include="EquipmentCountersForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EquipmentCountersForm.Designer.cs">
+      <DependentUpon>EquipmentCountersForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EquipmentOther.cs" />
+    <Compile Include="EquipmentOtherForms.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EquipmentOtherForms.Designer.cs">
+      <DependentUpon>EquipmentOtherForms.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EquipmnetCounters.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManageAbntForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageAbntForm.Designer.cs">
+      <DependentUpon>ManageAbntForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PrintAbonentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PrintAbonentForm.Designer.cs">
+      <DependentUpon>PrintAbonentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RegisterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegisterForm.Designer.cs">
+      <DependentUpon>RegisterForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Transactions.cs" />
+    <Compile Include="TransactionsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TransactionsForm.Designer.cs">
+      <DependentUpon>TransactionsForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="DocActForm.resx">
+      <DependentUpon>DocActForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DocContractForm.resx">
+      <DependentUpon>DocContractForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DocRequestForm.resx">
+      <DependentUpon>DocRequestForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EquipmentCountersForm.resx">
+      <DependentUpon>EquipmentCountersForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EquipmentOtherForms.resx">
+      <DependentUpon>EquipmentOtherForms.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageAbntForm.resx">
+      <DependentUpon>ManageAbntForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrintAbonentForm.resx">
+      <DependentUpon>PrintAbonentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="RegisterForm.resx">
+      <DependentUpon>RegisterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TransactionsForm.resx">
+      <DependentUpon>TransactionsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
